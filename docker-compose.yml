@@ -1,0 +1,11 @@
+version: "3"
+services:
+  db:
+    image: postgres
+    container_name: "postgres_ros_atom_labs"
+    environment:
+      POSTGRES_PASSWORD: "1234"
+      POSTGRES_USER: "postgres"
+      POSTGRES_DB: "ros_atom_labs"
+    ports:
+      - "5432:5432"
